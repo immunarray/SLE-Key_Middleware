@@ -46,8 +46,10 @@ namespace SLE_Key_Middleware
             string[] Plate3Ichips = { Plate3Chip1.Text, Plate3Chip2.Text, Plate3Chip3.Text, Plate3Chip4.Text };
             string[] Plate4Ichips = { Plate4Chip1.Text, Plate4Chip2.Text, Plate4Chip3.Text, Plate4Chip4.Text };
 
-            // Does plate 4 have blanks? 
-            if(Plate4Ichips Contains "");
+    // Is plate 4 all blank
+
+            
+
     // Check if plate 1 ichips exist, 
             if (String.IsNullOrEmpty(Plate1Chip1.Text) 
                 || String.IsNullOrEmpty(Plate1Chip2.Text)  
@@ -195,6 +197,22 @@ namespace SLE_Key_Middleware
                 else
                 {
                     return Analyze;
+                }
+            }
+        }
+
+        class IsPlateEmpty
+        {
+            public string CheckForBlankPlate(string[] IchipsInPlate)
+            {
+                string IsBlank = "False";
+                if (SampleID == "")
+                {
+                    return IsBlank ="True";
+                }
+                else
+                {
+                    return IsBlank;
                 }
             }
         }
