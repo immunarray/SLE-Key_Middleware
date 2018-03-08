@@ -1,0 +1,25 @@
+﻿CREATE DATABASE SLE-key_Middleware;
+
+CREATE TABLE RunInfo (
+	ID int NOT NULL AUTO_INCREMENT,
+	Operator varchar(255),
+	Date datetime(),
+	RunNumber varchar(255),
+	PBS10X varchar(255),
+	PBS1X varchar(255),
+	Casein varchar(255),
+	Tween20 varchar(255),
+	PFW varchar(255),
+	Cy2 varchar(255),
+	AF647 varchar(255),
+	PRIMARY KEY (ID)
+);
+
+CREATE TABLE MetaDataDetial (
+	ID int NOT NULL AUTO_INCREMENT,
+	PersonID int,
+	LastName varchar(255),
+	FirstName varchar(255),
+	Address varchar(255),
+	City varchar(255) 
+);
