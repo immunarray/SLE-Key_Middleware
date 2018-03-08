@@ -120,6 +120,28 @@ namespace SLE_Key_Middleware
             
 
             // Cross check all samples for plate#exist="True"
+            List<string> allslides = new List<string>();
+            if (plate1exists == "True") 
+            {
+                foreach (string chip in Plate1Ichips){ allslides.Add(chip); }
+            }
+            if (plate2exists == "True")
+            {
+                foreach (string chip in Plate2Ichips) { allslides.Add(chip); }
+            }
+            if (plate3exists == "True")
+            {
+                foreach (string chip in Plate3Ichips) { allslides.Add(chip); }
+            }
+            if (plate4exists == "True")
+            {
+                foreach (string chip in Plate4Ichips) { allslides.Add(chip); }
+            }
+            if(allslides.Distinct().Count()!=allslides.Count())
+            {
+                MessageBox.Show("A Chip is used in more than one plate");
+                return;
+            }
             // load all values into a list , see if list.Distinct().Count()!=List.Count()
 
             // Check if plate 1 ichips exist, 
