@@ -153,10 +153,10 @@
             this.Plate4Chip2 = new System.Windows.Forms.TextBox();
             this.Plate4Chip1 = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.Operator = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label37 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Operator = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1305,21 +1305,14 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Operator and Date";
             // 
-            // Operator
+            // label57
             // 
-            this.Operator.Location = new System.Drawing.Point(63, 19);
-            this.Operator.Name = "Operator";
-            this.Operator.Size = new System.Drawing.Size(100, 20);
-            this.Operator.TabIndex = 0;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(254, 19);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(97, 20);
-            this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 3, 1, 13, 54, 40, 0);
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(9, 22);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(48, 13);
+            this.label57.TabIndex = 3;
+            this.label57.Text = "Operator";
             // 
             // label37
             // 
@@ -1330,20 +1323,27 @@
             this.label37.TabIndex = 2;
             this.label37.Text = "Date";
             // 
-            // label57
+            // dateTimePicker1
             // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(9, 22);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(48, 13);
-            this.label57.TabIndex = 3;
-            this.label57.Text = "Operator";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(254, 19);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(97, 20);
+            this.dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.Value = new System.DateTime(2018, 3, 1, 13, 54, 40, 0);
+            // 
+            // Operator
+            // 
+            this.Operator.Location = new System.Drawing.Point(63, 19);
+            this.Operator.Name = "Operator";
+            this.Operator.Size = new System.Drawing.Size(100, 20);
+            this.Operator.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 605);
+            this.ClientSize = new System.Drawing.Size(769, 572);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
