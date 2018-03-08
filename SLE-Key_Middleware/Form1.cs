@@ -47,7 +47,7 @@ namespace SLE_Key_Middleware
             string[] Plate4Ichips = { Plate4Chip1.Text, Plate4Chip2.Text, Plate4Chip3.Text, Plate4Chip4.Text };
 
             // Is plate 4 all blank
-            // See if slide values exist
+            // See if slide values exist smartgit test
             IsPlateEmpty a = new IsPlateEmpty();
             string plate4exists = a.CheckForBlankPlate(Plate4Ichips);
 
