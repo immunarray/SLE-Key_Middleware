@@ -62,6 +62,13 @@ namespace SLE_Key_Middleware
                     // quit program 
                     return;
                 }
+                // See if slide contians empty string ""
+                if(Plate4Ichips.Contains(""))
+                {
+                    MessageBox.Show("Plate contains an empty slide, please review");
+                    // quit program
+                    return;
+                }
             }
             
             
