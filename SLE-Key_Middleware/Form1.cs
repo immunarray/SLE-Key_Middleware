@@ -65,7 +65,7 @@ namespace SLE_Key_Middleware
                 // See if slide contians empty string ""
                 if(Plate4Ichips.Contains(""))
                 {
-                    MessageBox.Show("Plate contains an empty slide, please review");
+                    MessageBox.Show("Plate 4 contains an empty slide, please review");
                     // quit program
                     return;
                 }
@@ -88,6 +88,13 @@ namespace SLE_Key_Middleware
                     // quit program 
                     return;
                 }
+                // See if slide contians empty string ""
+                if (Plate3Ichips.Contains(""))
+                {
+                    MessageBox.Show("Plate 3 contains an empty slide, please review");
+                    // quit program
+                    return;
+                }
             }
 
             // Is plate 2 all blank
@@ -104,6 +111,13 @@ namespace SLE_Key_Middleware
                 {
                     MessageBox.Show("Slide ID has been entered twice in Plate 2, please review");
                     // quit program 
+                    return;
+                }
+                // See if slide contians empty string ""
+                if (Plate2Ichips.Contains(""))
+                {
+                    MessageBox.Show("Plate 2 contains an empty slide, please review");
+                    // quit program
                     return;
                 }
             }
